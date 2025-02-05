@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "DM Serif Display", "serif";
+  --font-secondary: "Sora", "serif";
+
+  --color-primary: oklch(28.13% 0.0358 174.66);
+  --color-secondary: oklch(84.45% 0.0588 123.63);
+  --color-text: oklch(96.88% 0.02 84.59);
+  --color-accent-1: oklch(59.21% 0.1009 124.26);
+  --color-accent-2: oklch(55.6% 0.1277 49.63);
+}
