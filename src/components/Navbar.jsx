@@ -26,13 +26,15 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="absolute left-0 right-0 flex items-center justify-between font-normal font-secondary py-4 px-2 w-full max-w-[1280px] mx-auto text-primary z-50">
+      <div className="absolute left-0 right-0 flex items-center justify-between font-normal font-secondary py-4 px-2 w-full max-w-[1280px] mx-auto text-secondary z-50">
         <div className="hidden lg:flex flex-1 items-center justify-start gap-4">
           {navItems.map((item, index) => (
             <li key={index} className="list-none flex flex-col lg:flex-row">
               <Link to={item.path} className="flex items-center">
                 <span className="block lg:hidden p-1">{item.icon}</span>
-                <span className="text-primary">{item.name}</span>
+                <span className="text-secondary font-secondary">
+                  {item.name}
+                </span>
               </Link>
             </li>
           ))}
@@ -54,14 +56,19 @@ const Navbar = () => {
               </button>
               <ul className="flex mt-16 flex-col items-start justify-center gap-8">
                 {navItems.map((item, index) => (
-                  <li key={index} className="list-none">
+                  <li
+                    key={index}
+                    className="list-none hover:bg-accent-1 p-2 w-full rounded-md transition duration-300 ease-in-out"
+                  >
                     <Link
                       to={item.path}
                       onClick={toggleMenu}
-                      className="flex items-center gap-2"
+                      className="flex items-center gap-2 "
                     >
-                      <span>{item.icon}</span>
-                      <span>{item.name}</span>
+                      <span className="text-secondary">{item.icon}</span>
+                      <span className="text-secondary font-secondary">
+                        {item.name}
+                      </span>
                     </Link>
                   </li>
                 ))}
@@ -79,7 +86,7 @@ const Navbar = () => {
           </button>
         </div>
         <div>
-          <h2 className="font-primary text-primary text-xl md:2xl lg:tex-3xl px-8">
+          <h2 className="font-primary text-secondary text-xl md:2xl lg:tex-3xl px-8">
             Heaven Harmony Counselling P.L.L.C
           </h2>
         </div>
@@ -87,7 +94,7 @@ const Navbar = () => {
           <div className="cursor-pointer">
             <CollectionsBookmarkIcon />
           </div>
-          <span className="p-1 w-8 h-8 rounded-full text-center bg-orange-400 text-secondary cursor-pointer">
+          <span className="p-1 w-8 h-8 rounded-full text-center bg-orange-400 text-primary cursor-pointer">
             0
           </span>
         </div>
