@@ -1,11 +1,9 @@
-import Hero from "./sections/Hero";
-import Preserve from "./sections/Preserve";
+import Hero2 from "./Hero2";
 
 const Homepage = () => {
   return (
     <>
-      <Hero />
-      <Preserve />
+      <Hero2 />
     </>
   );
 };

@@ -4,9 +4,10 @@
   --font-primary: "DM Serif Display", "serif";
   --font-secondary: "Sora", "serif";
 
-  --color-primary: oklch(28.13% 0.0358 174.66);
-  --color-secondary: oklch(84.45% 0.0588 123.63);
-  --color-text: oklch(96.88% 0.02 84.59);
-  --color-accent-1: oklch(59.21% 0.1009 124.26);
-  --color-accent-2: oklch(55.6% 0.1277 49.63);
+  --color-primary: oklch(33.2% 0.0438 192.95);
+  --color-secondary: oklch(93.17% 0.0215 136.6);
+  --color-text-secondary: oklch(48.21% 0.0109 150.51);
+  --color-accent-1: oklch(53.09% 0.1112 146.93);
+  --color-accent-2: oklch(76.83% 0.0824 135.22);
+  --color-accent-3: oklch(97.99% 0.0076 48.66);
 }
