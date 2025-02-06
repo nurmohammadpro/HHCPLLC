@@ -64,15 +64,15 @@ const Navbar2 = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="lg:hidden bg-primary fixed top-0 left-0 w-full h-screen z-50">
-            <div className="p-4">
+          <div className="lg:hidden bg-primary fixed top-0 left-0 w-full h-screen  z-50">
+            <div className="p-4 transition duration-300 ease-in-out">
               <button
                 onClick={toggleMenu}
-                className="absolute top-4 right-4 text-accent-3 cursor-pointer"
+                className="absolute top-4 right-4 text-secondary cursor-pointer"
               >
                 <CloseIcon />
               </button>
-              <ul className="flex mt-16 flex-col items-start justify-center gap-8">
+              <ul className="flex mt-16 flex-col items-start justify-center gap-8 rounded-md transition duration-300 ease-in-out">
                 {menuItems.map((item, index) => (
                   <li
                     key={index}
