@@ -6,9 +6,9 @@ import Card from "../Card";
 
 const MagicalTherapy = () => {
   return (
-    <div className="w-full mt-10">
+    <div className="w-full my-20">
       <div className="flex flex-col px-2 gap-6 max-w-[1280px] mx-auto">
-        <h2 className="font-primary font-bold text-4xl lg:text-6xl my-8">
+        <h2 className="font-primary font-bold text-4xl lg:text-6xl">
           Magical Therapy for the People
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

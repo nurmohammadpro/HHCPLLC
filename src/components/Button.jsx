@@ -4,7 +4,7 @@ const variants = {
   primary:
     "bg-secondary text-primary border border-secondary hover:bg-primary hover:text-secondary",
   secondary:
-    "bg-primary text-secondary border border-secondary hover:bg-secondary hover:text-primary",
+    "bg-primary text-secondary border border-secondary hover:bg-secondary hover:border-primary hover:text-primary",
 };
 
 const Button = ({ title, path, type, variant = "primary" }) => {
